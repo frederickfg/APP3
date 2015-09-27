@@ -8,9 +8,7 @@ package APP3;
  */
 public class Terminal
 {
-
-	// Constantes et attributs
-	// ....
+	public String chaine;
 
 	/**
 	 * Un ou deux constructeurs (ou plus, si vous voulez) pour l'initalisation

@@ -1,4 +1,4 @@
-package app3;
+package APP3;
 
 /**
  * <p>Title: APP6 Compilation</p>

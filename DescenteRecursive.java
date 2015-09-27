@@ -54,17 +54,17 @@ public class DescenteRecursive
 			args[0] = "ExpArith.txt";
 			args[1] = "ResultatSyntaxique.txt";
 		}
-		DescenteRecursive dr = new DescenteRecursive(args[0]);
+		DescenteRecursive descenteRecursive = new DescenteRecursive(args[0]);
 		try
 		{
-			ElemAST RacineAST = dr.AnalSynt();
+			ElemAST RacineAST = descenteRecursive.AnalSynt();
 			toWriteLect += "Lecture de l'AST trouve : " + RacineAST.LectAST()
 					+ "\n";
 			System.out.println(toWriteLect);
 			toWriteEval += "Evaluation de l'AST trouve : " + RacineAST.EvalAST()
 					+ "\n";
 			System.out.println(toWriteEval);
-			Writer w = new Writer(args[1], toWriteLect + toWriteEval); // Ecriture
+			Writer writer = new Writer(args[1], toWriteLect + toWriteEval); // Ecriture
 																		// de
 																		// toWrite
 																		// dans

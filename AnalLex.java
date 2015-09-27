@@ -7,16 +7,15 @@ package APP3;
  */
 public class AnalLex
 {
-
-	// Attributs
-	// ...
+	public String chaine;
 
 	/**
 	 * Constructeur pour l'initialisation d'attribut(s)
+	 * @param string 
 	 */
-	public AnalLex()
-	{ // arguments possibles
-		//
+	public AnalLex(String chaine)
+	{ 
+		this.chaine = chaine;
 	}
 
 	/**
@@ -57,20 +56,20 @@ public class AnalLex
 			args[0] = "ExpArith.txt";
 			args[1] = "ResultatLexical.txt";
 		}
-		Reader r = new Reader(args[0]);
+		Reader reader = new Reader(args[0]);
 
-		AnalLex lexical = new AnalLex(r.toString()); // Creation de l'analyseur
+		AnalLex lexical = new AnalLex(reader.toString()); // Creation de l'analyseur
 														// lexical
 
 		// Execution de l'analyseur lexical
-		Terminal t = null;
+		Terminal terminal = null;
 		while (lexical.resteTerminal())
 		{
-			t = lexical.prochainTerminal();
-			toWrite += t.chaine + "\n"; // toWrite contient le resultat
+			terminal = lexical.prochainTerminal();
+			toWrite += terminal.chaine + "\n"; // toWrite contient le resultat
 		} // d'analyse lexicale
 		System.out.println(toWrite); // Ecriture de toWrite sur la console
-		Writer w = new Writer(args[1], toWrite); // Ecriture de toWrite dans
+		Writer writer = new Writer(args[1], toWrite); // Ecriture de toWrite dans
 													// fichier args[1]
 		System.out.println("Fin d'analyse lexicale");
 	}
