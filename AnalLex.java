@@ -1,4 +1,4 @@
-package APP3.src;
+package APP3;
 
 /** @author Ahmed Khoumsi */
 
