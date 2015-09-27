@@ -2,32 +2,36 @@ package app3;
 
 /** @author Ahmed Khoumsi */
 
-/** Classe representant une feuille d'AST
+/**
+ * Classe representant une feuille d'AST
  */
-public class NoeudAST extends ElemAST {
+public class NoeudAST extends ElemAST
+{
 
-  // Attributs
+	// Attributs
 
-  /** Constructeur pour l'initialisation d'attributs
-   */
-  public NoeudAST( ) { // avec arguments
-    //
-  }
+	/**
+	 * Constructeur pour l'initialisation d'attributs
+	 */
+	public NoeudAST()
+	{ // avec arguments
+		//
+	}
 
- 
-  /** Evaluation de noeud d'AST
-   */
-  public int EvalAST( ) {
-     //
-  }
+	/**
+	 * Evaluation de noeud d'AST
+	 */
+	public int EvalAST()
+	{
+		//
+	}
 
-
-  /** Lecture de noeud d'AST
-   */
-  public String LectAST( ) {
-     //
-  }
+	/**
+	 * Lecture de noeud d'AST
+	 */
+	public String LectAST()
+	{
+		//
+	}
 
 }
-
-

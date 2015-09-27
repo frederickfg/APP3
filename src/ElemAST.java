@@ -2,25 +2,28 @@ package app3;
 
 /** @author Ahmed Khoumsi */
 
-/** Classe Abstraite dont heriteront les classes FeuilleAST et NoeudAST
+/**
+ * Classe Abstraite dont heriteront les classes FeuilleAST et NoeudAST
  */
-public abstract class ElemAST {
+public abstract class ElemAST
+{
 
-  
-  /** Evaluation d'AST
-   */
-  public abstract int EvalAST();
+	/**
+	 * Evaluation d'AST
+	 */
+	public abstract int EvalAST();
 
+	/**
+	 * Lecture d'AST
+	 */
+	public abstract String LectAST();
 
-  /** Lecture d'AST
-   */
-  public abstract String LectAST();
-
-
-/** ErreurEvalAST() envoie un message d'erreur lors de la construction d'AST
- */  
-  public void ErreurEvalAST(String s) {	
-    // 
-  }
+	/**
+	 * ErreurEvalAST() envoie un message d'erreur lors de la construction d'AST
+	 */
+	public void ErreurEvalAST(String s)
+	{
+		//
+	}
 
 }

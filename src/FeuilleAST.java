@@ -2,31 +2,36 @@ package app3;
 
 /** @author Ahmed Khoumsi */
 
-/** Classe representant une feuille d'AST
+/**
+ * Classe representant une feuille d'AST
  */
-public class FeuilleAST extends ElemAST {
+public class FeuilleAST extends ElemAST
+{
 
-  // Attribut(s)
+	// Attribut(s)
 
+	/**
+	 * Constructeur pour l'initialisation d'attribut(s)
+	 */
+	public FeuilleAST()
+	{ // avec arguments
+		//
+	}
 
-/**Constructeur pour l'initialisation d'attribut(s)
- */
-  public FeuilleAST( ) {  // avec arguments
-    //
-  }
+	/**
+	 * Evaluation de feuille d'AST
+	 */
+	public int EvalAST()
+	{
+		//
+	}
 
-
-  /** Evaluation de feuille d'AST
-   */
-  public int EvalAST( ) {
-    //
-  }
-
-
- /** Lecture de chaine de caracteres correspondant a la feuille d'AST
-  */
-  public String LectAST( ) {
-    //
-  }
+	/**
+	 * Lecture de chaine de caracteres correspondant a la feuille d'AST
+	 */
+	public String LectAST()
+	{
+		//
+	}
 
 }
